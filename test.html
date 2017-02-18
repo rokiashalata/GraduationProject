@@ -12,7 +12,6 @@
 <!-- Mobile Specific Metas ================================================== -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="shortcut icon" href="images/logoimage.png">
 <script>
 		if (window.screen.height==568) { // iPhone 4"
 		document.querySelector("meta[name=viewport]").content="width=320.1";
@@ -26,15 +25,13 @@
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 <link href="css/hover.css" rel="stylesheet" media="all">
 <link rel="stylesheet" href="css/animate.css">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -44,7 +41,7 @@
 		<div role="main" class="ui-content">
 				
 				<div class="logo">
-				    <img src="images/logo.jpg">
+				    <img src="images/logo.png">
 				</div>
 				
 				<center>
@@ -82,19 +79,17 @@
    <div role="main" class="ui-content">
       
 	  <form method="post" action="demo.php">
-		<div class="icon">
-		     <a href="" class="ui-btn ui-icon-home ui-btn-icon-notext">Delete</a>
-             <input type="text" name="name" id="fname" placeholder="Name">
-		</div>
-         <input type="number" name="age" id="age" min="1" max="100" placeholder="Age">
-		 <input type="email" name="email" placeholder="Email Address">
-		 <input type="password" name="psw" placeholder="Password">
-		 <select name="Role" id="select" value="Role">
+		
+		<input class="user" type="text" name="name" id="fname" placeholder="Name">
+        <input class="age" type="number" name="age" id="age" min="1" max="100" placeholder="Age">
+		<input class="email" type="email" name="email" placeholder="Email Address">
+		<input class="pass" type="password" name="psw" placeholder="Password">
+		<select class="role" name="Role" id="select" value="Role">
             <option value="1">Patient</option>
             <option value="2">Doctor</option>
             <option value="3">Laboratory</option>
-         </select>
-		 <textarea name="Description" rows="10" cols="30" placeholder="Description"></textarea>
+        </select>
+		<textarea class="desc" name="Description" rows="10" cols="30">Description</textarea>
 	  </form>
 	  
    </div>
